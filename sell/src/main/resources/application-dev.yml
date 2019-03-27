@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+    url: jdbc:mysql://127.0.0.1:3306/neteasedemo?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      location: C:/netease-demo-images/
+
+  redis:
+    host: 10.175.245.3
+    port: 6379
+    password:
+
+server:
+  port: 8080
+
+custom:
+  static:
+    url-path: /image/
+    url-pattern: /image/**
+    image-location: C:/netease-demo-images/
